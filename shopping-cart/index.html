@@ -32,22 +32,26 @@
 
                 <div class="col-md-5 center-item">
                   <div class="input-group number-spinner">
-                    <button class="btn btn-default" id="phone-minus-icon">
+                    <button class="btn btn-default" id="phone-minus">
                       <i class="fas fa-minus"></i>
                     </button>
                     <input
                       type="number"
                       min="0"
                       class="form-control text-center"
-                      id="phone-counter"
+                      id="phone-quantity"
                       value="1"
                     />
-                    <button class="btn btn-default" id="phone-plus-icon">
+                    <button class="btn btn-default" id="phone-plus">
                       <i class="fas fa-plus"></i>
                     </button>
                   </div>
-                  <h5>$1219</h5>
-                  <img src="images/remove.png" alt="" class="remove-item" />
+                  <h5>$ <span id="phone-cost">1219</span></h5>
+                  <img
+                    src="images/remove.png"
+                    alt=""
+                    class="remove-item ms-auto me-2"
+                  />
                 </div>
               </div>
             </div>
@@ -60,21 +64,26 @@
                 </div>
                 <div class="col-md-5 center-item">
                   <div class="input-group number-spinner">
-                    <button class="btn btn-default">
+                    <button class="btn btn-default" id="case-minus">
                       <i class="fas fa-minus"></i>
                     </button>
                     <input
                       type="number"
                       min="0"
                       class="form-control text-center"
+                      id="case-quantity"
                       value="1"
                     />
-                    <button class="btn btn-default">
+                    <button class="btn btn-default" id="case-plus">
                       <i class="fas fa-plus"></i>
                     </button>
                   </div>
-                  <h5>$59</h5>
-                  <img src="images/remove.png" alt="" class="remove-item" />
+                  <h5>$ <span id="case-cost">59</span></h5>
+                  <img
+                    src="images/remove.png"
+                    alt=""
+                    class="remove-item ms-auto me-2"
+                  />
                 </div>
               </div>
             </div>
@@ -88,9 +97,9 @@
                 </div>
 
                 <div class="col-md-4 status">
-                  <h5>$1,278</h5>
-                  <h5>$0</h5>
-                  <h5>$1,278</h5>
+                  <h5>$ <span id="sub-total">1278</span></h5>
+                  <h5>$ <span id="tax">127.80</span></h5>
+                  <h5>$ <span id="grand-total">1278</span></h5>
                 </div>
               </div>
             </div>
